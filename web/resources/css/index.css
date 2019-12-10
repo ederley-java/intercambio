@@ -1,0 +1,15 @@
+#principal{
+    width: 0 auto;
+        margin: 0 auto;
+}
+
+#menusocial{
+    text-align: center; 
+
+}
+
+#mainPageIcon {
+    background: url(/ico/home.png) no-repeat;
+    height: 16px;
+    width: 16px;
+}

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>       
+        <h:outputStylesheet library="css" name="index.css" />
+
+        <style>
+            .ui-breadcrumb {
+                background-color: white;
+                border: 0;
+            }
+
+            .ui-breadcrumb ul li span {
+                text-decoration:none;
+            }
+
+            .ui-panel .ui-panel-titlebar {
+                background-color: white;
+                border: 0;               
+            }
+
+            .ui-widget-content {
+                border: 0;
+            }
+
+            body {
+                margin:0px;
+            }
+
+        </style>
+
+        <title>Home</title>
+    </h:head>
+    <h:body >
+        <h:form >
+            <p:menubar >
+
+                <p:menuitem value="Home" url="faces/index.xhtml" />
+                <p:menuitem value="Bolsa" url="faces/bolsa.xhtml" />
+                <p:menuitem value="Newsletter" url="faces/cadastro.xhtml" />
+
+            </p:menubar>
+
+            <!--p:breadCrumb ></p:breadCrumb-->
+
+        </h:form>
+        <br />
+        <center>
+
+            <p:graphicImage name="images/inter 5.jpg" width="700" height="400" />
+
+            <br />
+
+            <p:panel id="basic" header="Você sabia que é possível fazer um intercâmbio sem pagar?" footer="Vancouver - Canadá: 6 meses, incluso estadia por R$ 6.789,90." style="margin-bottom:20px">
+                <h:panelGrid columns="2" cellpadding="10">
+                    <p:graphicImage name="cidades/Canada.jpg" />
+                    <h:outputText
+                        value="O processo para fazer intercâmbio pode variar bastante de 
+                        acordo com o tipo de programa que você escolher. As opções para estudar fora são inúmeras e um dos passos mais importantes 
+                        é conversar com quem entende do assunto, para que você não deixe de considerar nenhuma opção! Um Consultor da Alpha Intercâmbios, 
+                        poderá te ajudar a encontrar o programa de intercâmbio ideal e te orientar durante todas as etapas da sua experiência: antes, 
+                        durante e até mesmo depois da sua viagem. O mesmo vale para quem quer fazer um intercâmbio para trabalhar fora ou fazer um Mochilão. 
+                        Com a ajuda de um especialista, você evitará frustrações, imprevistos e poderá aproveitar muito mais essa experiência tão importante 
+                        que é um intercâmbio no exterior." />
+                </h:panelGrid>
+            </p:panel>
+
+        </center>
+    </h:body>
+</html>
+
